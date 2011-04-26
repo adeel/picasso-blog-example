@@ -2,7 +2,7 @@
 
 {% block content %}
   {% for post in posts %}
-    <h2><a href="/posts/{{ post.hash }}">{{ post.title }}</a></h2>
+    <h2><a href="/posts/{{ post.hash }}">{{ post.title|e }}</a></h2>
     {{ post.body }}
   {% endfor %}
   <p>Add a <a href="/new">new post</a>.</p>
