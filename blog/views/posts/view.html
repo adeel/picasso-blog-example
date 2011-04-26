@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <h2>{{ post.title }}</h2>
+  {{ post.body }}
+  <p>Posted on {{ post.date.strftime("%e %b %Y") }}.</p>
+{% endblock %}
