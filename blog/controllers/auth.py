@@ -5,7 +5,6 @@ def login(req):
   return "auth/login", {}
 
 def login_post(req):
-  print req["params"]
   password = req["params"].get("password")
   if password and password == config.password:
     req["session"]["is_logged_in"] = True
