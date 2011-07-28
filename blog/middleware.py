@@ -1,4 +1,4 @@
-from pack.util.response import redirect
+from pump.util.response import redirect
 
 def wrap_requiring_login(app):
   def wrapped(request):
